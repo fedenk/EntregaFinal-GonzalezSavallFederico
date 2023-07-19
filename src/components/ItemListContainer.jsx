@@ -1,7 +1,20 @@
-export const Contenedor = (props)=>{
+
+import { ItemList }   from '../components/ItemList';
+import { useProductos } from '../hooks/useProductos';
+
+
+export const ItemListContainer = ()=>{
+
+    const { productos, loading} = useProductos()
+
+ 
+
     return(
         <div>
-        <h1 className="textCont">{props.titulo}</h1>
+            {
+                loading? <h2>Cargando...</h2> : <ItemList productos = {productos}/>
+            }
+            
         </div>
     )   
 }
