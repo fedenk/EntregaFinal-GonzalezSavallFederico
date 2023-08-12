@@ -1,7 +1,7 @@
 
 import { ItemList }   from '../components/ItemList';
 import { useProductos } from '../hooks/useProductos';
-
+import { Loader } from '../components/Loader'
 
 export const ItemListContainer = ()=>{
 
@@ -12,7 +12,7 @@ export const ItemListContainer = ()=>{
     return(
         <div>
             {
-                loading? <h2>Cargando...</h2> : <ItemList productos = {productos}/>
+                loading? <Loader/> : <ItemList productos = {productos}/>
             }
             
         </div>

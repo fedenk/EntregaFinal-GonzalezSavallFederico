@@ -1,12 +1,72 @@
-.nav{
-    background-image: linear-gradient(180deg, rgb(229, 6, 241), black);
+.header{
+    background-color: black;
     padding-top: 30px;
     padding-bottom: 30px;
-    .nav__li{
-        margin-left: 20px;   
-        .nav__li__1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+        .nav_i{
+            font-family: 'Bebas Neue', cursive;
+            font-size:120%;
             text-decoration: none;
             color: white;
+            margin-left: 30px;
+        } 
+        .nav__img{
+            margin-bottom: 40px;
+            margin-right: 80px;
         }
-    }
+    
+        @media(max-width:768px){
+            .nav{
+                display:flex;
+                flex-direction: column;
+                position:fixed;
+                height: 100%;
+                right:-700px;
+                text-align: center;
+                visibility: hidden;
+                inset:0;
+            }
+            .nav__li{
+                font-family: 'Bebas Neue', cursive;
+                font-size:120%;
+                text-decoration: none;
+                color: white;
+                padding-bottom:10px;
+                
+            }
+            .nav.active{
+                max-width:20%;
+                position:fixed;
+                left:80%;
+                height: 100%;
+                text-align:center;
+                z-index:1;
+                padding-bottom:30px;
+                background-color: black;
+                border-left: solid 1px white;
+                padding-top: 115px;
+                visibility: visible;
+            }
+        }
+   
+       
+        @media(min-width:768px){
+            .nav{
+                background-color: black;
+                display: flex;
+                justify-content:space-between;
+         
+            .nav__li{
+                font-family: 'Bebas Neue', cursive;
+                font-size:120%;
+                text-decoration: none;
+                color: white;
+                margin-right: 50px;
+            }
+        }
+    }   
 }
+

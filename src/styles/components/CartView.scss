@@ -1,0 +1,97 @@
+.cart_title{
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size:300%;
+    margin-top: 20px;
+}
+
+.empty_cart{
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.buttonir_comprar{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120%;
+    text-align: center;
+    padding:10px 30px 10px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10%;
+    border:solid 1px white;
+}
+
+.cart_card{
+    
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+    border: none;
+    border-bottom: solid 1px white;
+    
+    .cart_img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .cart_t{
+        color:white;
+        font-family: 'Bebas Neue', cursive;
+        text-align: left;
+    }
+
+    .cart_p{
+        color:white;
+        font-family: 'Bebas Neue', cursive;
+        margin-left:10px;
+    }
+
+    .eliminar_item{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 120%;
+        text-align: center;
+        padding:5px 20px 5px 20px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 10%;
+        border:solid 1px white;
+    }
+
+}
+
+.cart_total{
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 50px;
+    font-size:300%;
+    margin-top: 20px;
+}
+
+.vaciar_carrito{
+    margin-left:30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120%;
+    text-align: center;
+    padding:8px 20px 8px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10%;
+    border:solid 1px white;
+}
+
+.button_termcomp{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120%;
+    text-align: center;
+    padding:10.5px 20px 10.5px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10%;
+    border:solid 1px white;
+    margin-left:20px;
+}

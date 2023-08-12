@@ -4,8 +4,7 @@ export const ItemList = ({productos})=>{
 
     return(
         <div className= 'container'>
-            <h2>Catálogo</h2>
-            <hr />
+            <h2 className="h2_catalogo">Catálogo</h2>
 
             <div className= 'row'>
                 {

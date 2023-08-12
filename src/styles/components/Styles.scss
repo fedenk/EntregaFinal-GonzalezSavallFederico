@@ -2,3 +2,14 @@
 @use 'CartWidget.scss';
 @use 'ItemListContainer';
 @use 'ItemCard';
+@use 'ButtonBurguer';
+@use 'ItemCount';
+@use 'CartView';
+@use 'Loader';
+@use 'Footer';
+@use 'Checkout';
+@use 'Carrusel';
+
+body{
+    background-color: rgb(46, 45, 45);
+}

@@ -1,22 +1,39 @@
 .card{
+    background-color: black;
+    padding-top:30px;
+    margin-top: 30px;
     margin-bottom: 30px;
     width: 300px;
     border: none;
         .card_text{
+            color:white;
+            font-family: 'Bebas Neue', cursive;
             text-align: center;
-            margin:10px;
+            margin-bottom:30px;
+        }
+        .card_p{
+            color:white;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .card_p_0{
+            color:red;
+            font-family: 'Bebas Neue', cursive;
         }
         .img_card{
             width: 200px;
             height: 200px;
+            margin-bottom:30px;
         }
         .button_card{
-            margin-bottom: 10px;
-        }
-
-        .button_card{
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            width: 80px;
+            margin-bottom: 30px;
+            padding:10px;
             text-decoration: none;
-            color: black;
-            background-color: aqua;
+            color: white;
+            background-color: black;
+            border-radius: 10%;
+            border:solid 1px white;
         }
     }   

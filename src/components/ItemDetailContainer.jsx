@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
-import { pedirDatos } from './helpers/pedirDatos.js';
 import { useParams } from 'react-router-dom';
-import { ItemDetail } from './ItemDetail.jsx'
+import { ItemDetail } from './ItemDetail.jsx';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../firebase/config.js';
+import { Loader } from './Loader.jsx'
 
 
 
@@ -14,18 +16,24 @@ export const ItemDetailContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
-            .then(r => {
-                setItem( r.find(prod => prod.id === Number(itemId)) )
+        const itemRef = doc(db, "productos", itemId)
+
+        getDoc(itemRef)
+        .then((doc)=>{
+            setItem({
+                id: doc.id,
+                ...doc.data()
             })
-            .finally(() => setLoading(false))
+        })
+        .catch(e => console.log(e))
+        .finally(() => setLoading(false))
     }, [])
 
     return (
         <div className="container my-5">
             {
                 loading
-                    ? <h2>Cargando...</h2>
+                    ? <Loader/>
                     : <ItemDetail item={item}/>
             }
         </div>
